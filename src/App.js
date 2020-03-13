@@ -50,6 +50,7 @@ const images = [
     views: 987,
     id: 5
   },
+
   {
     author: {
       name: 'Luis Quintero',
@@ -70,7 +71,7 @@ const images = [
   },
   {
     author: {
-      name: 'Renato Ibarra',
+      name: 'Renata Ibarra',
       avatar: 'https://images.pexels.com/users/avatars/963082/renato-abati-706.jpeg?w=256&h=256&fit=crop&crop=faces'
     },
     source: 'https://images.pexels.com/photos/2768877/pexels-photo-2768877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400',
@@ -112,26 +113,30 @@ const Image = ({ image }) => (
 )
 
 const Creator = () => (
-  <div>
-    
-      <h1 className='title'> Images Project </h1>
-       <h3 className='title'> By Getinsoft</h3>
 
-  </div>
+  <header className='header'> 
+      <h1 id='title'> By Post App </h1>
+      <div className="ByPost">
+        <a title = " ByPost "href="#"> <img  src="https://i.pinimg.com/236x/d7/45/f3/d745f30b04448e5ba3e6134cfb39f3ed--ios-app-icon-app-icon-logo.jpg" 
+        alt=" ByPost " id="logo" /></a>
+      </div> 
+  </header>
 )
 
 class App extends Component {
   render () {
     return (
-      <div className='images'>
-         <Creator/>
+      <>
+      <Creator/>
+        <div className='images'>
         {images.map(image => (
           <Image
             image={image}
             key={image.id}
           />
-        ))}
+         ))}
       </div>
+      </>
     )
   }
 }

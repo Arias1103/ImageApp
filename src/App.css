@@ -1,16 +1,26 @@
 .images {
-  max-width: 300px;
+  max-width: 100%;
   margin: 1em auto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  align-items: center;
+  
+  
+ 
+
 }
 
 .card {
+  top: 5em;
+  position: relative;
   padding: 1em;
   border: 1px solid #e1e1e1;
   background-color: #FFF;
-  margin: 1em 0;
-  border-radius: 0.2em;
+  margin: 1em ;
+  border-radius: 1em;
   box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.17);
-  width: 20rem;
+  
+
 }
 
 .image {
@@ -29,9 +39,34 @@
   border-radius: 50%;
 }
 
-.title{
+#logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 30%;
   position: relative;
-  right: 20cm;
-  font-size: 35px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  left: 25rem;
+  bottom: 1.5em;
+}
+
+.header {
+  background: rgb(30,185,198);
+ background: linear-gradient(90deg, rgba(30,185,198,0.16850490196078427) 36%, rgba(9,183,215,0.896796218487395) 52%, rgba(0,255,162,0.4066001400560224) 70%);
+  color: rgba(255, 169, 9, 0.979);
+  padding: 0 0;
+  height: 180px;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+#title{
+  color: rgb(143, 209, 214);
+  padding: 0 0 0 0; 
+  width: 5%%;
+  position: relative;
+  top: 2em;
+  left: 3em;
+  font-size: 40px;
+
 }
