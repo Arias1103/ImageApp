@@ -77,15 +77,6 @@ const images = [
     source: 'https://images.pexels.com/photos/2768877/pexels-photo-2768877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400',
     views: 143,
     id: 8
-  },
-  {
-    author: {
-      name: 'Juan Pérez',
-      avatar: 'https://images.pexels.com/users/avatars/851295/brayden-law-840.jpeg?w=256&h=256&fit=crop&crop=faces'
-    },
-    source: 'https://images.pexels.com/photos/1829191/pexels-photo-1829191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=400',
-    views: 637,
-    id: 10
   }
 ]
 
@@ -114,11 +105,12 @@ const Image = ({ image }) => (
 
 const Creator = () => (
 
-  <header className='header'> 
-      <h1 id='title'> By Post App </h1>
+  <header className='header'>  
+         <h1 id='slogan'> ¡ Share your Art !  </h1>
+         <h1 id='title'> By Post App </h1>
       <div className="ByPost">
         <a title = " ByPost "href="#"> <img  src="https://i.pinimg.com/236x/d7/45/f3/d745f30b04448e5ba3e6134cfb39f3ed--ios-app-icon-app-icon-logo.jpg" 
-        alt=" ByPost " id="logo" /></a>
+         alt=" ByPost " id="logo" /></a>
       </div> 
   </header>
 )
