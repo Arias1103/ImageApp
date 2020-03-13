@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 
+
+
+
 const images = [
   {
     author: {
@@ -99,7 +102,7 @@ const Image = ({ image }) => (
         className='avatar'
       />
       <div>
-        {image.author.name}
+       Author: {image.author.name}
       </div>
       <div>
         views: {image.views}
@@ -108,10 +111,20 @@ const Image = ({ image }) => (
   </div>
 )
 
+const Creator = () => (
+  <div>
+    
+      <h1 className='title'> Images Project </h1>
+       <h3 className='title'> By Getinsoft</h3>
+
+  </div>
+)
+
 class App extends Component {
   render () {
     return (
       <div className='images'>
+         <Creator/>
         {images.map(image => (
           <Image
             image={image}

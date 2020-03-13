@@ -28,3 +28,10 @@
   width: 45px;
   border-radius: 50%;
 }
+
+.title{
+  position: relative;
+  right: 20cm;
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
