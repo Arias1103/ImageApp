@@ -1,11 +1,33 @@
 import React, { Component } from 'react'
 import Image from './Image.js'
 import Creator from './Creator.js'
-
 import './App.css'
+import Formulario from './Formulario.js'
 
 
 
+
+
+class App extends Component {
+  render () {
+    return (
+      <>
+      <Creator/>
+      <Formulario/>
+        <div className='images'>
+        {images.map(image => (
+          <Image
+            image={image}
+            key={image.id}
+          />
+         ))}
+      </div>
+      </>
+    )
+  }
+}
+
+// Array de componentes
 
 const images = [
   {
@@ -85,23 +107,5 @@ const images = [
 
 
 
-
-class App extends Component {
-  render () {
-    return (
-      <>
-      <Creator/>
-        <div className='images'>
-        {images.map(image => (
-          <Image
-            image={image}
-            key={image.id}
-          />
-         ))}
-      </div>
-      </>
-    )
-  }
-}
 
 export default App

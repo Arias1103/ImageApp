@@ -1,10 +1,12 @@
 .images {
 
-  max-width: 90%;
-  margin: 1em auto;
+  max-width: 55%;
+  margin: 1em ;
+
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   align-items: center;  
+
 }
 
 .card {
@@ -88,7 +90,49 @@ font-size: 40px;
 
 @media screen and (min-width: 580px) and (max-width: 780px) {
   #slogan {
-    position: relative;
+    display: inline;
   }
 }
 
+.ContentForm {
+ width: 30%;
+ height: 450px;
+ max-width: 400px;
+ min-width: 200px;
+ float: right;
+ background-image: url(https://images.pexels.com/photos/3825011/pexels-photo-3825011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+ margin-top:  8%;
+ margin-right: 15%;
+padding: 30px;
+border-radius: 10%;
+}
+
+#Hform {
+ text-align: center;
+ margin-bottom: 20px;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 65px;
+}
+
+.inputF{
+  display: flex;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 20px 0;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 5%;
+}
+
+#buttonF{
+  padding: 10px;
+  background-color: wheat;
+  width: 25%;
+  margin: 10px 0;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15%;
+
+}
