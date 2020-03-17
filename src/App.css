@@ -103,7 +103,7 @@ font-size: 40px;
  background-image: url(https://images.pexels.com/photos/3825011/pexels-photo-3825011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
  margin-top:  8%;
  margin-right: 15%;
-padding: 30px;
+padding: 40px;
 border-radius: 10%;
 }
 
@@ -128,7 +128,7 @@ border-radius: 10%;
 
 #buttonF{
   padding: 10px;
-  background-color: wheat;
+  background-color: rgba(0, 0, 0, 0.445);
   width: 25%;
   margin: 10px 0;
   font-size: 15px;
