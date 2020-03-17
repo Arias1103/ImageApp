@@ -61,6 +61,7 @@
   color: rgba(255, 255, 255, 0.966);
   padding: 0 0;
   height: 100%;
+  width: 100%;
   left: 0;
   top: 0;
   right: 0;
@@ -68,8 +69,8 @@
 
 #slogan{
 float: right;
-padding-right: 12em;
-padding-top: 1em;
+padding-right: 12%;
+padding-top: 1%;
 font-size: 40px;
  
 }
@@ -79,10 +80,15 @@ font-size: 40px;
 #title{
   color: rgb(143, 209, 214);
   padding: 0 0 0 0; 
-  width: 5%%;
   position: relative;
   top: 2em;
   left: 3em;
   font-size: 40px;
+}
+
+@media screen and (min-width: 580px) and (max-width: 780px) {
+  #slogan {
+    position: relative;
+  }
 }
 

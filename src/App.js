@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Image from './Image.js'
+import Creator from './Creator.js'
+
 import './App.css'
 
 
@@ -80,40 +83,8 @@ const images = [
   }
 ]
 
-const Image = ({ image }) => (
-  <div className='card'>
-    <img
-      src={image.source}
-      alt='Imagen'
-      className='image'
-    />
-    <div className='footer'>
-      <img
-        src={image.author.avatar}
-        alt='Avatar'
-        className='avatar'
-      />
-      <div>
-       Author: {image.author.name}
-      </div>
-      <div>
-        views: {image.views}
-      </div>
-    </div>
-  </div>
-)
 
-const Creator = () => (
 
-  <header className='header'>  
-         <h1 id='slogan'> ¡ Share your Art !  </h1>
-         <h1 id='title'> By Post App </h1>
-      <div className="ByPost">
-        <a title = " ByPost "href="#"> <img  src="https://i.pinimg.com/236x/d7/45/f3/d745f30b04448e5ba3e6134cfb39f3ed--ios-app-icon-app-icon-logo.jpg" 
-         alt=" ByPost " id="logo" /></a>
-      </div> 
-  </header>
-)
 
 class App extends Component {
   render () {
