@@ -1,10 +1,12 @@
 .images {
 
-  max-width: 90%;
-  margin: 1em auto;
+  max-width: 55%;
+  margin: 1em ;
+
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
   align-items: center;  
+
 }
 
 .card {
@@ -60,7 +62,12 @@
   background: linear-gradient(90deg, rgba(30,185,198,0.16850490196078427) 36%, rgba(9,183,215,0.896796218487395) 52%, rgba(0,255,162,0.4066001400560224) 70%);
   color: rgba(255, 255, 255, 0.966);
   padding: 0 0;
+<<<<<<< HEAD
+  height: 180px;
+=======
   height: 100%;
+  width: 100%;
+>>>>>>> f65dd46f06d5542f1236d6a966b2e247f59d8858
   left: 0;
   top: 0;
   right: 0;
@@ -68,8 +75,8 @@
 
 #slogan{
 float: right;
-padding-right: 12em;
-padding-top: 1em;
+padding-right: 12%;
+padding-top: 1%;
 font-size: 40px;
  
 }
@@ -79,10 +86,57 @@ font-size: 40px;
 #title{
   color: rgb(143, 209, 214);
   padding: 0 0 0 0; 
-  width: 5%%;
   position: relative;
   top: 2em;
   left: 3em;
   font-size: 40px;
 }
 
+@media screen and (min-width: 580px) and (max-width: 780px) {
+  #slogan {
+    display: inline;
+  }
+}
+
+.ContentForm {
+ width: 30%;
+ height: 450px;
+ max-width: 400px;
+ min-width: 200px;
+ float: right;
+ background-image: url(https://images.pexels.com/photos/3825011/pexels-photo-3825011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+ margin-top:  8%;
+ margin-right: 15%;
+padding: 40px;
+border-radius: 10%;
+}
+
+#Hform {
+ text-align: center;
+ margin-bottom: 20px;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 65px;
+}
+
+.inputF{
+  display: flex;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 20px 0;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 5%;
+}
+
+#buttonF{
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 25%;
+  margin: 10px 0;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 15%;
+
+}
